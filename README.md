@@ -1,16 +1,16 @@
 # Custom Dashboard
 
-This example demonstrates the web3sdkio SDK's capability to deploy any of our [pre-built smart contracts](https://portal.web3sdk.io/pre-built-contracts)!
+This example demonstrates the web3sdkio SDK's capability to deploy any of our [pre-built smart contracts](https://docs.web3sdk.io/pre-built-contracts)!
 
-We use the [`ContractDeployer class`](https://portal.web3sdk.io/typescript/sdk.contractdeployer) and the `deployBuiltInContract` function to deploy the contracts, and use the `sdk.getContractList` to view all the contracts we deployed so far!
+We use the [`ContractDeployer class`](https://docs.web3sdk.io/typescript/sdk.contractdeployer) and the `deployBuiltInContract` function to deploy the contracts, and use the `sdk.getContractList` to view all the contracts we deployed so far!
 
 This example can be utilized in projects that you want users to deploy smart contracts via your application dynamically, rather than the web3sdkio dashboard.
 
 ## Tools
 
-- [**web3sdkio TypeScript SDK**](https://portal.web3sdk.io/typescript/): to access the [ContractDeployer class](https://portal.web3sdk.io/typescript/sdk.contractdeployer) and view the deployed contracts.
+- [**web3sdkio TypeScript SDK**](https://docs.web3sdk.io/typescript/): to access the [ContractDeployer class](https://docs.web3sdk.io/typescript/sdk.contractdeployer) and view the deployed contracts.
 
-- [**web3sdkio React SDK**](https://portal.web3sdk.io/react/): to allow users to connect their wallet to the website using the [useMetamask](https://portal.web3sdk.io/react/react.usemetamask) hook, and view their wallet information using [useAddress](https://portal.web3sdk.io/react/react.useaddress).
+- [**web3sdkio React SDK**](https://docs.web3sdk.io/react/): to allow users to connect their wallet to the website using the [useMetamask](https://docs.web3sdk.io/react/react.usemetamask) hook, and view their wallet information using [useAddress](https://docs.web3sdk.io/react/react.useaddress).
 
 ## Using This Repo
 
@@ -26,7 +26,7 @@ We'll explore the details of how this repository works below.
 
 ### Viewing Deployed Contracts
 
-On the [index.tsx](./pages/index.tsx) page, we use the [`.getContractList`](https://portal.web3sdk.io/typescript/sdk.web3sdkiosdk.getcontractlist#web3sdkiosdkgetcontractlist-method) function to view all the contracts we deployed so far:
+On the [index.tsx](./pages/index.tsx) page, we use the [`.getContractList`](https://docs.web3sdk.io/typescript/sdk.web3sdkiosdk.getcontractlist#web3sdkiosdkgetcontractlist-method) function to view all the contracts we deployed so far:
 
 ```jsx
 // Get the signer of the currently connected wallet
@@ -46,13 +46,13 @@ web3sdkio.getContractList(address).then((contracts) => {
 
 On the [deploy.tsx](./pages/deploy.tsx) page, we use the [`.deployBuiltInContract`] function to deploy a contract, which is a generic function to deploy _any_ pre-built contract.
 
-Typically, you know which contract you want your users to deploy, so it's more helpful to use one of the methods exposed on the [ContractDeployer class](https://portal.web3sdk.io/typescript/sdk.contractdeployer#contractdeployer-class).
+Typically, you know which contract you want your users to deploy, so it's more helpful to use one of the methods exposed on the [ContractDeployer class](https://docs.web3sdk.io/typescript/sdk.contractdeployer#contractdeployer-class).
 
 Such as:
 
-- [deployNFTDrop](https://portal.web3sdk.io/typescript/sdk.contractdeployer.deploynftdrop)
-- [deployToken](https://portal.web3sdk.io/typescript/sdk.contractdeployer.deploytoken)
-- [deployMarketplace](https://portal.web3sdk.io/typescript/sdk.contractdeployer.deploymarketplace)
+- [deployNFTDrop](https://docs.web3sdk.io/typescript/sdk.contractdeployer.deploynftdrop)
+- [deployToken](https://docs.web3sdk.io/typescript/sdk.contractdeployer.deploytoken)
+- [deployMarketplace](https://docs.web3sdk.io/typescript/sdk.contractdeployer.deploymarketplace)
 
 On each of these pages, you can find code examples to help you deploy the contract.
 
@@ -85,4 +85,4 @@ const contractAddress = await web3sdkio.deployer.deployBuiltInContract(
 
 ## Join our Discord!
 
-For any questions, suggestions, join our discord at [https://discord.gg/web3sdkio](https://discord.gg/web3sdkio).
+For any questions, suggestions, join our discord at [https://discord.gg/n33UhsfUKB](https://discord.gg/n33UhsfUKB).
